@@ -1,0 +1,119 @@
+<!------ Include the above in your HEAD tag ---------->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b5a2b8c406.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="100x100" href="logo/newfavicon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Sign In</title>
+  <style media="screen">
+    .login-box {
+      margin: 0;
+      padding: 0;
+      width: 300px;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
+
+    .textbox {
+      width: 100%;
+      font-size: 20px;
+      padding: 8px 0;
+      margin: 8px 0;
+
+    }
+
+    .textbox input {
+      margin: 6px;
+      font-size: 20px;
+      border: none;
+      background-color: transparent;
+      font-size: 20px;
+      border-bottom: 1px outset;
+      outline: none;
+
+    }
+
+    .btn1 {
+      width: 100%;
+      padding: 5px 10px;
+      margin-bottom: 20px;
+
+    }
+
+    .p1 {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #000;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+    }
+
+    p span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    /* Google button code */
+    .btn-googleplus {
+      background: #E93F2E;
+      border-radius: 0;
+      color: #fff;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #b72213;
+    }
+
+    .btn-googleplus:link,
+    .btn-googleplus:visited {
+      color: #fff;
+    }
+
+    .btn-googleplus:active,
+    .btn-googleplus:hover {
+      background: #b72213;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body style="background-color : #ecfbfc;" id="deepak">
+  <form class="" action="/login" method="post">
+    <div class="login-box">
+      <img src="logo/logo_transparent.png" style="height:300px;width:300px;" alt="">
+      <div style="">
+
+        <div style="">
+          <h2 style="text-align:center;margin-right:7px;margin:0;margin-bottom:30px;">Admin</h2>
+        </div>
+        <div class="textbox">
+          <i class="far fa-envelope"><input type="email" name="username" placeholder="Email"></i>
+        </div>
+        <div class="textbox">
+          <i class="fas fa-lock"><input type="password" name="password" placeholder="Password"></i>
+        </div>
+        <input type="submit" class="btn1" name="" style="font-size:15px;  " value="Login">
+        <!-- <div style="display:inline-block;padding-right:38%;"><a href="#">Forgot password?</a></div> -->
+        <p class="p1" style="font-size:20px;"><span style="background-color: #ecfbfc;;">
+            or</span>
+        </p>
+        <div class="" style="font-size:12px;text-align:right;padding:2%;">
+          <p style="margin-top:10px;color:black;display:inline;">Dont have an Account?</p>
+          <a href="signup" style="display:inline;">Create account</a>
+        </div>
+        <!-- <input type="button" class="btn1" name="" style="font-size:15px;margin-top:1px;  " value="Create an account"> -->
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>

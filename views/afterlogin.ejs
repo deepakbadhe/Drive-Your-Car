@@ -1,0 +1,320 @@
+<%- include("afterheader") -%>
+
+<nav class="navbar  navbar-expand-sm  fixed sticky-top bg"  >
+  <button class="navbar-toggler" style="background-color: antiquewhite;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span  style="color: black;" class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <h4  style=" margin-top: 8px; margin-bottom: 8px; margin-left:35px ; font-weight:bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" routerLink="/home">DRIVE YOUE CAR</h4>
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item" >
+          <a  id="#1"  (mouseover)="changetext()" (mouseout)="dt()" class="hoverable12 nav-link" style="color:whitesmoke;"><span class="fa fa-home "></span></a>
+        </li>
+      <li class="nav-item" >
+        <a   id="#2" href="aboutus" (mouseover)="changetext2()" (mouseout)="dt2()" class="hoverable12 nav-link " style="color:whitesmoke;"><span class="fa fa-info "></span></a>
+      </li>
+
+      <li class="nav-item">
+        <a  id="#3" href="contact" (mouseover)="changetext3()" (mouseout)="dt3()"   class="hoverable12 nav-link" style="color:whitesmoke;"><span class="fa fa-phone "></span></a>
+      </li>
+      <li class="nav-item" >
+        <a  id="#5"  (mouseover)="changetext5()" (mouseout)="dt5()"   class="hoverable12 nav-link" style="color:whitesmoke;"><span class="fa fa-user-plus "></span></a>
+      </li>
+      <li class="nav-item" style="padding-left:95px ;">
+          <a  id="#4"  (mouseover)="changetext4()" (mouseout)="dt4()" class="hoverable12 nav-link"  style="color:whitesmoke;"><span class="fa fa-user-circle-o "></span></a>
+        </li>
+        <li class="nav-item" style=" padding-right: 30px;">
+          <a  id="#6"  (mouseover)="changetext6()" href="logout" (mouseout)="dt6()" class="hoverable12 nav-link"  style="color:whitesmoke;"><span class="fa fa-power-off "></span></a>
+        </li>
+    </ul>
+
+   </div>
+</nav>
+<!-- <nav class="navbar  navbar-expand-sm  fixed sticky-top  bg">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <h4 style=" font-weight:bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" routerLink="/home"> DRIVE YOUR CAR</h4>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link " style="color:whitesmoke;"><span class="fa fa-info fa-lg"></span>ABOUTUS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " style="color:whitesmoke;"><span class="fa fa-address-card fa-lg"></span>CONTACT</a>
+      </li>
+    </ul>
+    <span>
+
+    </span>
+    <span class="navbar-text  dot " style="color:rgb(245, 231, 231); ">
+      <a href="home" style="text-decoration:none;color:white;"><i class="fa fa-sign-in margin-right:5px"></i> LogOut </a>
+
+    </span>
+  </div>
+</nav> -->
+<div  class="backcolor">
+      <header class="jumbotron image" >
+          <div class="container " >
+                <div class="row row-header sam ">
+                    <div class="col-12 col-sm-6 " >
+                        <h2 class="serif font "  style="text-shadow:3px 3px lightseagreen;">DRIVE YOUR CAR <span  class="fa fa-car" aria-hidden="true"></span>
+                           ADVANTAGE</h2>
+                        <h4 class="forbold serif "  style="text-shadow:1px 1px lightseagreen;">
+                          We simplified car <span class="fa fa-car"></span> rentals, so you can focus on what's important to you.
+                        </h4>
+                    </div>
+                </div>
+                <a href="vehiclesdisplay">
+                  <button class="sambutton">BOOK NOW</button>
+                </a>
+
+            </div>
+            <div class="container1">
+              <div class=" text-block">
+                  <p style="text-align: center; margin-top: 9px; font-size: 20px;">WHEREVER YOU GO, GO WITH ALL YOUR HEART! <i class="fa fa-heart heart"></i> AND GOOD CAR ALWAYS HELP WITH YOUR JOURNEY</p><br>
+                  <p style="text-align: center; margin-top: -20px; font-size: 18px">SOME DAYS, NOTHING BEATS A REALLY GOOD DRIVER</p>
+
+              </div>
+            </div>
+          </header>
+
+          <!--********************FORM CARD*****************************-->
+
+
+          <div class="container " style="padding-top: 50px;">
+           <div class="row">
+             <div class="container cardovercard">
+               <div class="card card--14">
+                 <img class="card__img" src="/images/i.jpg" alt="">
+                 <p class="card__text">Fill the give form ,while filling the form  remember that evey information provided by you should be correct.
+                   Make sure that you have driver’s license, in case of any emergency we can check your driving license or in case we found some invalid details and you have to pay full amount at the  time of boking itself.
+                 </p>
+                 <a href="VehicleDetails" style="text-decoration:none;"><button class="card__btn">Register</button></a>
+
+               </div>
+
+             </div>
+           </div>
+
+          </div>
+
+          <div class="container  ">
+         <h3 class="  mb-4 text" style="margin-top: 70px; padding-bottom: 20px; border-bottom:1px solid; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">THE DRIVE YOUR CAR FEATURES</h3>
+         <div class="row  ">
+           <div class="col-12 col-sm-6 col-lg-3 mt-5 mb-4" style="padding-bottom: 55px;">
+             <div class="flip-card">
+               <div class="flip-card-inner">
+                 <div class="flip-card-front">
+                   <img src="/images/money 1.png" style="width:245px;height:195px; opacity: 0.8;">
+                 </div>
+                 <div class="flip-card-back">
+                   <h1 style="color:white" class="fa fa-rupee text-center car"></h1>
+                   <div class="card-body">
+                     <p class="card-text">Our prices include taxes and insurance.
+                       What you see is what you really pay!.</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="col-12 col-sm-6 col-lg-3 mt-5">
+             <div class="flip-card">
+               <div class="flip-card-inner">
+                 <div class="flip-card-front">
+                   <img src="/images/129-1294589_burton-lumber-heber-city-location-driving-directions-car.png" alt="Avatar" style="opacity: 0.8; width:245px;height:195px;">
+                 </div>
+                 <div class="flip-card-back">
+                   <h1 style="color:white" class="fa fa-map-marker text-center car" aria-hidden="true"></h1>
+                   <div class="card-body">
+                     <p class="card-text">Our cars have all-India permits. Just remember to pay state tolls and entry taxes</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="col-12 col-sm-6 col-lg-3 mt-5">
+             <div class="flip-card">
+               <div class="flip-card-inner">
+                 <div class="flip-card-front">
+                   <img src="/images/109372737-gradient-shopping-banner-special-offer-sign-icon-sale-symbol-sales-tag-abstract-template-for-design-.jpg" alt="Avatar" style="opacity: 0.8; width:245px;height:195px;">
+                 </div>
+                 <div class="flip-card-back">
+                   <h1 style="color:white" class="fa fa-gift text-center car" aria-hidden="true"></h1>
+                   <div class="card-body">
+                     <p class="card-text">After every 2 months all of our customer will get offer of 10% on every car</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="col-12 col-sm-6 col-lg-3 mt-5">
+             <div class="flip-card">
+               <div class="flip-card-inner">
+                 <div class="flip-card-front ">
+                   <img src="/images/petrol-icon-vector-2808380.jpg" alt="Avatar" style="width:245px;height:195px; opacity: 0.8">
+                 </div>
+                 <div class="flip-card-back">
+                   <h1 style="color:white" class="fa fa-tint text-center car" aria-hidden="true"></h1>
+                   <div class="card-body">
+                     <p class="card-text">Don't worry about mileage! All fuel costs are included. If you refill fuel, we'll pay you back!.</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+      </div>
+      <div style="background-color: rgb(244, 245, 245); margin-top: 250px; padding-top: 40px; padding-bottom: 30px; position: relative;">
+    <div class="container serif ">
+       <div class="container1">
+      <div class=" text-block1">
+          <h2 class=" sam2" style="text-align: center; margin-top: 9px;">HOW DRIVE YOUR CAR WORKS</h2>
+          <h3  style="text-align: center; margin-top: 150px; color:rgb(253, 253, 253);text-shadow:3px 3px rgb(17, 17, 17);  font-size: 45px;">Drive yourself to an adventure and back in 4 simple steps</h3>
+      </div>
+    </div>
+
+      <div class="row row-content align-item-center mb-5 " style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+
+        <div class="col col-sm order-sm-first col-md s1 mt-15">
+            <div class="media">
+                <img class="d-flex mr-4 img-thumbnail align-self-center" src="/images/stock-photo-car-transportation-red-wheel-riding-driving-hands-man-drive-e8ba670b-4f48-4970-b5cc-942bc71cf7d4.jpg" style="width: 300px; height: 300px; border-radius:50%; ">
+                <div class="media-body">
+                    <h4 class="mr-2 ml-3" ><span class="badge badge-danger">Step 1</span> BOOK </h4>
+                    <p class="d-none d-sm-block mr-2 ml-3 " style="border-bottom:1px solid;">Find a car whichever you want (8 seater, 4 seater, and Bike) from registered car and book that car .Please check your booking before making any payment inshort <strong> Search and book a car on our site!</strong> <p>
+                    <br>
+                      <h4 class="mr-2 ml-3"> <span class="badge badge-danger">step2</span> UNLOCK </h4>
+                      <p class="d-none d-sm-block mr-2 ml-3 " style="border-bottom:1px solid;">After booking the second step is We SMS your car details 20 minutes before pickup. so please provide right information so it may be easy while contacting </p>
+                     <br>
+                      <h4 class="mr-2 ml-3"> <span class="badge badge-danger">step3</span> DRIVE YOUR CAR</h4>
+                    <p class="d-none d-sm-block mr-2 ml-3" style="border-bottom:1px solid;">Grab the keys from the location and drive.. </p><br>
+                    <h4 class="mr-2 ml-3"> <span class="badge badge-danger">step4</span> Return</h4>
+                    <p class="d-none d-sm-block mr-2 ml-3">Return the car to the same location....this is the last step, enjoy your JOURNEY with your car </p>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  <footer class="footer-distributed" >
+
+      <div class="footer-left">
+
+        <h3>Drive Your <span>Car</span></h3>
+
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+
+          <a href="#">Register</a>
+
+          <a href="#">Pricing</a>
+
+          <a href="aboutus">About</a>
+
+          <a href="contact">Contact</a>
+        </p>
+
+        <p class="footer-company-name">Drive Your Car © 2020</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Madhvan nagar Bheriya jadjad jablpur road sagar</span> Madhay Pradesh, India</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>9926449654</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">driveyourcar@gmail.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>About Drive your car services</span>
+          Drive your car provides car at rent in very low cost .our service is feasible for eveyone. our staring price is just only 75/- :)
+        </p>
+
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+          <a href="#"><i class="fa fa-envelope-o"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+
+
+
+
+
+
+<script type="text/javascript">
+  changetext(){
+      document.getElementById("#1").innerHTML="Home";
+
+    }
+    dt(){
+     document.getElementById('#1').innerHTML="<span class='fa fa-home'></span>"
+    }
+    changetext2(){
+     document.getElementById("#2").innerHTML="About us";
+
+   }
+   dt2(){
+    document.getElementById('#2').innerHTML="<span class='fa fa-info'></span>"
+   }
+   changetext3(){
+     document.getElementById("#3").innerHTML="Contact us";
+
+   }
+   dt3(){
+    document.getElementById('#3').innerHTML="<span class='fa fa-phone'></span>"
+   }
+   changetext4(){
+     document.getElementById("#4").innerHTML="Myaccount";
+
+   }
+   dt4(){
+    document.getElementById('#4').innerHTML="<span class='fa fa-user-circle-o'></span>"
+   }
+   changetext5(){
+     document.getElementById("#5").innerHTML="Register";
+
+   }
+   dt5(){
+     document.getElementById('#5').innerHTML="<span class='fa fa-user-plus'></span>"
+    }
+    changetext6(){
+      document.getElementById("#6").innerHTML="Logout";
+
+    }
+    dt6(){
+      document.getElementById('#6').innerHTML="<span class='fa fa-power-off'></span>"
+     }
+  $(window).scroll(function(){
+    $('nav').toggleClass("scrolled",$(this).scrollTop()>55);
+  });
+
+</script>
+
+
+</body>
+</html>

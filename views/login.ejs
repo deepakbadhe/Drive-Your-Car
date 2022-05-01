@@ -1,0 +1,33 @@
+<%- include("header") -%>
+
+          <form action="/afterlogin" method="post" class="login-box">
+            <h3 style="margin:20px 0">Drive Your Car</h3>
+            <% if(val===1) {%>
+              <div class="textbox alert alert-danger" style="font-weight: 400;font-size: 14px;line-height: 1.3; text-align:center;">Email Not Exists</div>
+            <%}%>
+
+
+
+
+            <div class="textbox">
+              <i class="fa fa-envelope"><input type="email" name="email" placeholder="Email" required></i>
+            </div>
+
+            <div class="textbox">
+              <i class="fa fa-lock"><input type="password" name="password" placeholder="Password" required></i>
+            </div>
+            <%if(val===2) {%>
+              <%function deepak(){ %>
+                <div class="textbox alert alert-danger" style="font-weight: 400;font-size: 14px;line-height:1.3; text-align:center;">Password is incorrect</div>
+              <%}%>
+              <% setTimeout(deepak, 3000); %>
+
+            <%}%>
+            <div style="">
+              <input type="submit" class="btn1 btn-primary" name="" style="font-size:15px;  " value="Login">
+              <input type="" class="btn1 btn-danger" name="" style="font-size:15px;margin-left:20px;  " value="Cancel">
+            </div>
+          </form>
+
+</body>
+</html>

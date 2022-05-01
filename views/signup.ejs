@@ -1,0 +1,362 @@
+
+
+<!-- <form action="/signup" method="post" class="login-box">
+  <h3 style="margin:20px 0">Drive Your Car</h3>
+  <% if(val===3) {%>
+  <div class="textbox alert alert-danger" style="font-weight: 400;font-size: 14px;line-height: 1.3; text-align:center;">User email already Exists</div>
+  <%}%>
+            <div class="textbox">
+              <i class="fa fa-user"><input type="text" name="name" placeholder="First & Last Name" autocomplete="off"></i>
+            </div>
+            <div class="textbox">
+              <i class="fa fa-address-book"><input type="text" name="number" placeholder="Contact Number"></i>
+            </div>
+            <div class="textbox">
+              <i class="fa fa-envelope"><input type="email" name="email" placeholder="Email"></i>
+            </div>
+            <div class="textbox">
+              <i class="fa fa-lock"><input type="password" name="password" placeholder="Password"></i>
+            </div>
+            <div style="">
+              <input type="submit" class="btn1 btn-primary" name="" style="font-size:15px;  " value="Register">
+              <input type="" class="btn1 btn-danger" name="" style="font-size:15px;margin-left:20px;  " value="Cancel">
+            </div>
+          </form>
+
+        </body>
+  </html> -->
+
+
+
+
+  <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div  class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content imagecar font">
+        <div class="modal-header" style="background-color: chocolate;">
+          <h3 class="modal-title" style="color: rgb(252, 251, 250);" id="staticBackdropLabel">Drive your car</h3>
+          <button type="button" class="close" style=" color: rgb(253, 252, 252); " data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" >
+          <div class="">
+            <div class="row">
+
+<div class="panel_blur"></div>
+<div class="panel">
+  <div class="panel__form-wrapper">
+    <button type="button" class="panel__prev-btn" aria-label="Go back to home page" title="Go back to home page">
+          <svg fill="rgba(255,255,255,0.5)" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"/>
+          </svg>
+        </button>
+
+    <ul class="panel__headers">
+      <li class="panel__header"><a href="#register-form" class="panel__link" role="button">Sign Up</a></li>
+      <li class="panel__header active"><a href="#login-form" class="panel__link" role="button">Sign In</a></li>
+    </ul>
+
+    <div class="panel__forms">
+
+      <!-- Login Form -->
+      <form class="form panel__login-form" id="login-form" method="post" action="/">
+        <div class="form__row">
+          <input type="text" id="email" class="form__input" name="login-mail" data-validation="email" data-error="Invalid email address." required>
+          <span class="form__bar"></span>
+          <label for="email" class="form__label">E-mail</label>
+          <span class="form__error"></span>
+        </div>
+        <div class="form__row">
+          <input type="password" id="password" class="form__input" name="login-pass" data-validation="length" data-validation-length="8-25" data-error="Password must contain 8-25 characters." required>
+          <span class="form__bar"></span>
+          <label for="password" class="form__label">Password</label>
+          <span class="form__error"></span>
+        </div>
+        <div class="form__row">
+          <input type="submit" class="form__submit" value="Get Started!">
+          <a href="#password-form" class="form__retrieve-pass" role="button">Forgot Password?</a>
+        </div>
+      </form>
+
+      <!-- Register Form -->
+      <form class="form panel__register-form" id="register-form" method="post" action="/">
+        <div class="form__row">
+          <input type="text" id="register-email" class="form__input" name="register-mail" data-validation="email" data-error="Invalid email address." required>
+          <span class="form__bar"></span>
+          <label for="register-email" class="form__label">E-mail</label>
+          <span class="form__error"></span>
+        </div>
+        <div class="form__row">
+          <input type="password" id="register-password" class="form__input" name="register-pass" data-validation="length" data-validation-length="8-25" data-error="Password must contain 8-25 characters" required>
+          <span class="form__bar"></span>
+          <label for="register-password" class="form__label">Password</label>
+          <span class="form__error"></span>
+        </div>
+        <div class="form__row">
+          <input type="password" id="register-password-check" class="form__input" name="register-repeat-pass" data-validation="confirmation" data-validation-confirm="register-pass" data-error="Your passwords did not match." required>
+          <span class="form__bar"></span>
+          <label for="register-password-check" class="form__label">Check password</label>
+          <span class="form__error"></span>
+        </div>
+        <div class="form__row">
+          <input type="submit" class="form__submit" value="Register!">
+        </div>
+      </form>
+
+      <!-- Forgot Password Form -->
+      <form class="form panel__password-form" id="password-form" method="post" action="/">
+        <div class="form__row">
+          <p class="form__info">Can't log in? Please enter your email. We will send you an email with instructions on how to reset your password.</p>
+        </div>
+        <div class="form__row">
+          <input type="text" id="retrieve-pass-email" class="form__input" name="retrieve-mail" data-validation="email" data-error="Invalid email address." required>
+          <span class="form__bar"></span>
+          <label for="retrieve-pass-email" class="form__label">E-mail</label>
+          <span class="form__error"></span>
+        </div>
+        <div class="form__row">
+          <input type="submit" class="form__submit" value="Send new password!">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="background-color: chocolate;">
+          <button type="button" class="btn btn-secondary" style="color: blue;" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+<style media="screen">
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    button {
+      padding: 0;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+    button:active, button:hover {
+      outline: 0;
+    }
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+    a:active, a:hover {
+      outline: 0;
+    }
+    .panel_blur, .panel {
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    /**
+     * Blur
+     */
+    .panel_blur {
+      position: absolute;
+      background: url('https://image.ibb.co/jGk9RR/bg.jpg') no-repeat center fixed;
+      background-size: 100% 100%;
+      filter: blur(5px);
+    }
+    /**
+     * Panel
+     */
+    .panel {
+      position: relative;
+      z-index: 1;
+    }
+    .panel__register-form, .panel__password-form {
+      display: none;
+    }
+    .panel__register-form .form__submit {
+      margin-top: 5px !important;
+    }
+    .panel__form-wrapper {
+      width: 100%;
+      height: 100%;
+      padding: 10%;
+      background-color: rgba(0, 0, 0, 0.5);
+      overflow-y: auto;
+    }
+
+    .panel__prev-btn {
+      width: 24px;
+      height: 24px;
+      background: none;
+      padding: 0;
+    }
+    .panel__prev-btn svg {
+      transition: fill 0.3s;
+    }
+    .panel__prev-btn:hover > svg {
+      fill: #ff1552;
+    }
+    .panel__headers {
+      padding: 10px 0;
+      text-align: center;
+    }
+    .panel__header {
+      font-size: 1.375rem;
+    }
+    .panel__header:first-child {
+      padding-bottom: 5px;
+    }
+    .panel__header.active > .panel__link {
+      color: #ff1552;
+      font-size: 3rem;
+    }
+    .panel__link {
+      color: inherit;
+      transition: all 0.3s;
+      font-weight: 600;
+    }
+    /**
+     * Styles for <form>
+     */
+    .form__row {
+      position: relative;
+      padding-top: 40px;
+    }
+    .form__row.has-error > .form__error:after {
+      display: block;
+    }
+    .form__input {
+      width: 100%;
+      padding: 5px 0;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      background: none;
+    }
+    .form__input:focus, .form__input:active {
+      outline: 0;
+    }
+    .form__input:focus ~ .form__label, .form__input:active ~ .form__label, .form__input:valid ~ .form__label {
+      bottom: 30px;
+      font-size: 0.75rem;
+    }
+    .form__input:focus ~ .form__bar, .form__input:active ~ .form__bar {
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
+    .form__bar {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      right: 50%;
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: #ff1552;
+      transition: all 0.3s;
+    }
+    .form__label {
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      width: 100%;
+      transition: all 0.3s;
+      pointer-events: none;
+    }
+    .form__submit {
+      width: 100%;
+      padding: 10px 0;
+      margin-top: 30px;
+      border: none;
+      border-radius: 10px;
+      font-weight: 600;
+      background-color: #ff1552;
+      cursor: pointer;
+    }
+    .form__retrieve-pass {
+      display: block;
+      padding: 15px 0;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.5);
+      transition: all 0.3s;
+    }
+    .form__retrieve-pass:hover {
+      color: #fff;
+    }
+    .form__error {
+      position: absolute;
+      bottom: -20px;
+      display: block;
+      width: 100%;
+      height: 20px;
+      color: #ff1552;
+      font-size: 0.75rem;
+      line-height: 20px;
+    }
+    .form__error:after {
+      content: 'x';
+      position: absolute;
+      bottom: 20px;
+      right: -20px;
+      display: none;
+      width: 20px;
+      height: 25px;
+      font-size: 1.125rem;
+      line-height: 25px;
+      text-align: center;
+      color: #ff1552;
+    }
+    .form__info {
+      text-align: center;
+    }
+
+
+</style>
+
+<script type="text/javascript">
+
+  $(function() {
+  	$("form").attr('novalidate', 'novalidate');
+      $('.panel__link, .form__retrieve-pass').on('click', function(e) {
+
+          e.preventDefault();
+
+          if ($(this).attr('href') === '#password-form') {
+              $('.panel__header').removeClass('active');
+          } else {
+              $(this).parent().addClass('active');
+              $(this).parent().siblings().removeClass('active');
+          }
+          target = $(this).attr('href');
+          $('.panel__forms > form').not(target).hide();
+          $(target).fadeIn(500);
+      });
+
+      $('.panel__prev-btn').on('click', function(e) {
+          $('.panel, .panel_blur').fadeOut(300);
+      });
+  });
+
+  $.validate({
+  	modules : 'security',
+  	errorMessageClass: 'form__error',
+  	validationErrorMsgAttribute: 'data-error'
+  });
+
+</script>

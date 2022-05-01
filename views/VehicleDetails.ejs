@@ -1,0 +1,39 @@
+<%-include('afterheader')%>
+<div id="login-box">
+  <div class="left fortext">
+    <h1>Register yourself here</h1>
+    <form  action="/afterlogin/dataupdated" method="post" enctype="multipart/form-data">
+      <input type="text" placeholder="Mobile no."  name="mobileno" required>
+      <input type="text" placeholder="Current address"  name="add" required>
+      <br>
+      <h5>Type Of Vehicle</h5>
+      <input  type="radio"  name="vehicletype" id="exampleRadios1" value="Car" checked>
+         <label  for="exampleRadios2"  style="padding-left: 8px;">
+          CAR
+          </label>
+          <br>
+         <input type="radio" name="vehicletype" id="exampleRadios3" value="Bike">
+          <label  for="exampleRadios3"  style="padding-left: 8px;">
+          BIKE
+          </label>
+            <div class="form-group row" style="margin-top: 28px;">
+              <label for="exampleFormControlFile1" class="col-sm-4  col-from-lable">Picture of vehicle</label>
+              <input type="file" class=" col-sm-4 ml-5 form-control-file" name="img" id="exampleFormControlFile1">
+            </div>
+
+         <button type="submit">Submit</button>
+         <button type="button" href="afterlogin">Cancel</button>
+    </form>
+
+
+
+  </div>
+
+  <div class="right">
+
+  </div>
+
+</div>
+
+</body>
+</html>

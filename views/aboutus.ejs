@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b5a2b8c406.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="css/afterlogin.css"> -->
+  <title></title>
+</head>
+
+<body>
+
+<nav class="navbar  navbar-expand-sm " style="background-color: rgba(235, 234, 232, 0.466); height: 40px;"  >
+    <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span   class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="nav navbar-nav mr-auto">
+        <span class="navbar-text " >
+          <span style="color:rgb(250, 246, 246); " class="dot">SHARE</span><span style="color: black;"> on social media and make everyone to know about Drive your car services</span>
+         </span>
+        <li class="nav-item" >
+            <a  class="hoverable12 nav-link" style="color:rgb(4, 129, 245); margin-left: 5px; margin-top: 2px;"><span class="fa fa-facebook "></span></a>
+          </li>
+        <li class="nav-item" >
+          <a  class="hoverable12 nav-link " style="color:rgb(245, 105, 175); margin-top: 2px;"><span class="fa fa-instagram "></span></a>
+        </li><li class="nav-item" >
+          <a  class="hoverable12 nav-link " style="color:rgb(105, 217, 245); margin-top: 2px;"><span class="fa fa-twitter "></span></a>
+        </li>
+        <li class="nav-item">
+          <a   class="hoverable12 nav-link" style="color:rgb(8, 179, 45); margin-top: 2px;"><span class="fa fa-whatsapp "></span></a>
+        </li>
+        <li class="nav-item" >
+          <a    class="hoverable12 nav-link" style="color:rgb(36, 35, 35); margin-top: 2px;"><span class="fa fa-github "></span></a>
+        </li>
+      </ul>
+     </div>
+  </nav>
+  <nav class="navbar  navbar-expand-sm  fixed sticky-top"  >
+      <button class="navbar-toggler" style="background-color: antiquewhite;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span  style="color: black;" class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <h4  style=" margin-top: 8px; margin-bottom: 8px; margin-left: 6px; font-weight:bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" routerLink="/home">DRIVE YOUE CAR</h4>
+         <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item" >
+              <a  id="#1"  (mouseover)="changetext()" (mouseout)="dt()" class="hoverable12 nav-link" style="color:whitesmoke;"><span class="fa fa-home "></span></a>
+            </li>
+          <li class="nav-item" >
+            <a   id="#2" routerLink='/about' (mouseover)="changetext2()" (mouseout)="dt2()" class=" active hoverable12 nav-link " style="color:whitesmoke;"><span class="fa fa-info "></span></a>
+          </li>
+
+          <li class="nav-item">
+            <a  id="#3"  (mouseover)="changetext3()" (mouseout)="dt3()" routerLink="/contact"   class="hoverable12 nav-link" style="color:whitesmoke;"><span class="fa fa-phone "></span></a>
+          </li>
+          <li class="nav-item" >
+            <a  id="#5"  (mouseover)="changetext5()" (mouseout)="dt5()"   class="hoverable12 nav-link" style="color:whitesmoke;"><span class="fa fa-user-plus "></span></a>
+          </li>
+          <li class="nav-item" style="padding-left:95px ;">
+            <a  id="#4"  (mouseover)="changetext4()" (mouseout)="dt4()" class="hoverable12 nav-link"  style="color:whitesmoke;"><span class="fa fa-user-circle-o "></span></a>
+          </li>
+          <li class="nav-item" style=" padding-right: 30px;">
+            <a  id="#6" href="logout" (mouseover)="changetext6()" routerLink="/home" (mouseout)="dt6()" class="hoverable12 nav-link"  style="color:whitesmoke;"><span class="fa fa-power-off "></span></a>
+          </li>
+        </ul>
+
+       </div>
+    </nav>
+    <div>
+       <header class="jumbotron ">
+
+        <div class="container">
+            <div class="row row-header " style=" color: black; font-weight:bolder">
+                <div class="row row-content align-item-center">
+                    <div class="col col-sm col-md ">
+                        <div class="media">
+                            <div class="d-flex flex-row-reverse">
+                            <img class="d-flex ml-2 img-thumbnail align-self-center  " src="/images/Jaguar_I-PACE_S_Indus-Silver_065.jpg" style="height: 15em;" alt="Buffet">
+                            <div class="media-body">
+                                <h2 class="ml-0"><span class="badge badge-danger">About</span> Drive your car</h2>
+                                <p class="d-none d-sm-block">
+                                  Well ! Here we presenting a wonderful features engrosed with full descriptive views on availability of renting cars
+
+                                  and acessing their own cars on rent basis . keeping in my mind the best out of all we recreate a pleasant feature of innovations where not
+
+                                  only Users will be satisfied but atmost be feel secure about -
+
+                                  * making Payments
+
+                                  * Quickly Booking on rent
+
+                                  * providing income feature(lend your car on rent earn money)
+
+
+
+                                  Keeping in mind all security for users and easy to obtain the reviews , comments , our service quality and utmost the easy
+
+                                  access of site. With best marketing features with try to provide best services . On time cars availabilities on perfect time
+
+                                  day and date we try to give the best of us </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="container" style="margin-top: 6%;">
+      <div class="row row-header " style=" color: black;">
+          <div class="col-12 col-sm-4">
+              <div class="card" style=" text-align: center; height: 15em; background-color: rgb(179, 158, 158);">
+                  <div class="card-body">
+                    <h5 class="card-title">WHO WE ARE</h5>
+                    <p class="card-text" style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Drive your car is a Self‐Drive car rental service. We save you
+                      the cost and hassle of owning a car while giving you all the good parts:
+                      Convenience, Mobility and Independence.We take care about everyone in our site you can find everytype of vehical</p>
+
+
+                  </div>
+                </div>
+          </div>
+          <div class="col-12 col-sm-4">
+              <div class="card" style=" text-align: center; height: 15em;  background-color: rgb(179, 158, 158);">
+                  <div class="card-body">
+                    <h5 class="card-title">WHAT WE DO?</h5>
+
+                    <p class="card-text" style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">We provide car at rend in very reasonable price and we also provide change to earn money to them who want to earn money but not geeting proper way.so just by give your car at rent you can earn good price in sort amount of time :)</p>
+
+
+                  </div>
+                </div>
+          </div>
+          <div class="col-12 col-sm-4">
+              <div class="card" style=" text-align: center;height: 15em;  background-color: rgb(179, 158, 158); ">
+                  <div class="card-body">
+                    <h5 class="card-title">OUR SERVICES</h5>
+
+                    <p class="card-text" style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">You can use car for all-India. Just remember to pay state tolls and entry taxes
+                      Don't worry about mileage! All fuel costs are included. If you refill fuel, we'll pay you back! but remember all fuel cost you will pay at time of booking only.
+                    </p>
+
+
+                  </div>
+                </div>
+          </div>
+
+
+
+      </div>
+  </div>
+    </div>
+    <div class="container" style="margin-top: 6%; margin-bottom: 3%;">
+      <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; border-bottom:1px solid;">About Our Team</h2>
+      <div class="row row-content align-item-center">
+        <div class="col col-sm order-sm-first col-md">
+            <div class="media" style="margin-top: 3%;">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="/assets/images/1111.jpeg " style="width: 200px; height: 200px; border-radius:50%; ">
+                <div class="media-body">
+                    <h4 class="mt-0" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">SHAMBHAVI SHARMA</h4>
+                    <strong>B.Tech Student (Software Engineer)</strong>
+                    <p class="d-none d-sm-block">Shambhavi sharma work as a frontend developer in the Drive your car site. Shambhvai sharma is a currently persuing B.Tech's final year.She completing her graduation from  Information Technology stream .She has been working from 6 months in the field of Web development and completed 2 web based projects under the guidence of Alberto Somayya(Executive Chef) Prof. in Hong kong univerty.
+                      </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row row-content align-item-center">
+      <div class="col col-sm order-sm-first col-md">
+          <div class="media" style="margin-top: 3%;">
+              <img class="d-flex mr-3 img-thumbnail align-self-center" src="/assets/images/2222.jpeg " style="width: 200px; height: 200px; border-radius:50%; ">
+              <div class="media-body">
+                  <h4 class="mt-0" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">DEEPAK BADHE</h4>
+                  <strong>B.Tech Student (Software Engineer)</strong>
+                  <p class="d-none d-sm-block">Deepak Badhe work as a backend developer in project. Deepak Badhe is a currently persuing B.Tech's final year.He completing his graduation from  Information Technology stream . Deepak Badhe is the idea seeker for this project. Deepak is working in the field of backend from 2 years. He is completed his basic of web development traning from Naresh IT institude.</p>
+
+              </div>
+          </div>
+      </div>
+
+  </div>
+    </div>
+
+
+    <footer class="footer-distributed" >
+
+        <div class="footer-left">
+
+          <h3>Drive Your <span>Car</span></h3>
+
+          <p class="footer-links">
+            <a href="#" class="link-1">Home</a>
+
+            <a href="#">Register</a>
+
+            <a href="#">Pricing</a>
+
+            <a href="#">About</a>
+
+            <a href="#">Contact</a>
+          </p>
+
+          <p class="footer-company-name">Drive Your Car © 2020</p>
+        </div>
+
+        <div class="footer-center">
+
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Madhvan nagar Bheriya jadjad jablpur road sagar</span> Madhay Pradesh, India</p>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>9926449654</p>
+          </div>
+
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">driveyourcar@gmail.com</a></p>
+          </div>
+
+        </div>
+
+        <div class="footer-right">
+
+          <p class="footer-company-about">
+            <span>About Drive your car services</span>
+            Drive your car provides car at rent in very low cost .our service is feasible for eveyone. our staring price is just only 75/- :)
+          </p>
+
+          <div class="footer-icons">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-envelope-o"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+          </div>
+
+        </div>
+
+      </footer>
+<style media="screen">
+  .hoverable12 {
+    display: inline-block;
+    backface-visibility: hidden;
+    vertical-align: middle;
+    position: relative;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transform: translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .hoverable12:before {
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+  }
+  .hoverable12:hover, .hoverable12:active, .hoverable12:focus {
+    transform: translateY(-5px);
+  }
+  .hoverable12:hover:before, .hoverable12:active:before, .hoverable12:focus:before {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+
+  nav {
+    background: rgb(24, 24, 24);
+    color: rgb(253, 231, 234);
+    text-transform: uppercase;
+  }
+
+  nav li a {
+    transition: 0.5s color ease-in-out;
+  }
+  .dot {
+    height: 25px;
+    width: 85px;
+    background-color: rgba(15, 15, 15, 0.884);
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 3px;
+
+     }
+
+/*********footer********/
+.footer-distributed{
+	background:rgb(24, 24, 24);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  rgb(185, 182, 182);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #878a8daf;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #878a8daf;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+/********/
+.jumbotron{
+    margin-top: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+</style>
+
+<script type="text/javascript">
+  changetext(){
+    document.getElementById("#1").innerHTML="Home";
+
+  }
+  dt(){
+   document.getElementById('#1').innerHTML="<span class='fa fa-home'></span>"
+  }
+  changetext2(){
+   document.getElementById("#2").innerHTML="About us";
+
+ }
+ dt2(){
+  document.getElementById('#2').innerHTML="<span class='fa fa-info'></span>"
+ }
+ changetext3(){
+   document.getElementById("#3").innerHTML="Contact us";
+
+ }
+ dt3(){
+  document.getElementById('#3').innerHTML="<span class='fa fa-phone'></span>"
+ }
+ changetext4(){
+   document.getElementById("#4").innerHTML="Myaccount";
+
+ }
+ dt4(){
+  document.getElementById('#4').innerHTML="<span class='fa fa-user-circle-o'></span>"
+ }
+ changetext5(){
+   document.getElementById("#5").innerHTML="Register";
+
+ }
+ dt5(){
+   document.getElementById('#5').innerHTML="<span class='fa fa-user-plus'></span>"
+  }
+  changetext6(){
+    document.getElementById("#6").innerHTML="Logout";
+
+  }
+  dt6(){
+    document.getElementById('#6').innerHTML="<span class='fa fa-power-off'></span>"
+   }
+</script>
+
+  </body>
+  </html>

@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b5a2b8c406.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="css/afterlogin.css"> -->
+  <title></title>
+</head>
+
+<body>
+<nav class="navbar  navbar-expand-sm " style="background-color: rgba(235, 234, 232, 0.466); height: 40px;"  >
+  <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span   class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="nav navbar-nav mr-auto">
+      <span class="navbar-text " >
+        <span style="color:rgb(250, 246, 246); " class="dot">SHARE</span><span style="color: black;"> on social media and make everyone to know about Drive your car services</span>
+       </span>
+      <li class="nav-item" >
+          <a  class="hoverable12 nav-link" style="color:rgb(4, 129, 245);margin-left: 5px; margin-top: 2px;"><span class="fa fa-facebook "></span></a>
+        </li>
+      <li class="nav-item" >
+        <a  class="hoverable12 nav-link " style="color:rgb(245, 105, 175); margin-top: 2px;"><span class="fa fa-instagram "></span></a>
+      </li><li class="nav-item" >
+        <a  class="hoverable12 nav-link " style="color:rgb(105, 217, 245); margin-top: 2px;"><span class="fa fa-twitter "></span></a>
+      </li>
+      <li class="nav-item">
+        <a   class="hoverable12 nav-link" style="color:rgb(8, 179, 45); margin-top: 2px;"><span class="fa fa-whatsapp "></span></a>
+      </li>
+      <li class="nav-item" >
+        <a    class="hoverable12 nav-link" style="color:rgb(36, 35, 35);margin-top: 2px;"><span class="fa fa-github "></span></a>
+      </li>
+    </ul>
+   </div>
+</nav>
+<nav class="navbar  navbar-expand-sm  fixed sticky-top"  >
+    <button class="navbar-toggler" style="background-color: antiquewhite;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span  style="color: black;" class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <h4  style=" margin-top: 8px; margin-bottom: 8px; margin-left: 6px; font-weight:bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" routerLink="/home">DRIVE YOUE CAR</h4>
+       <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item" >
+            <a  id="#1"  (mouseover)="changetext()" (mouseout)="dt()" class="hoverable12 nav-link" style="color:whitesmoke;"><span class="fa fa-home "></span></a>
+          </li>
+        <li class="nav-item" >
+          <a   id="#2" routerLink='/about' (mouseover)="changetext2()" (mouseout)="dt2()" class="hoverable12 nav-link " style="color:whitesmoke;"><span class="fa fa-info "></span></a>
+        </li>
+
+        <li class="nav-item">
+          <a  id="#3"  (mouseover)="changetext3()" (mouseout)="dt3()" routerLink="/contact"   class="hoverable12 nav-link" style="color:whitesmoke;"><span class="fa fa-phone "></span></a>
+        </li>
+        <li class="nav-item" >
+          <a  id="#5"  (mouseover)="changetext5()" (mouseout)="dt5()"   class="hoverable12 nav-link" style="color:whitesmoke;"><span class="fa fa-user-plus "></span></a>
+        </li>
+        <li class="nav-item" style="padding-left:95px ;">
+          <a  id="#4"  (mouseover)="changetext4()" (mouseout)="dt4()" class="hoverable12 nav-link"  style="color:whitesmoke;"><span class="fa fa-user-circle-o "></span></a>
+        </li>
+        <li class="nav-item" style=" padding-right: 30px;">
+          <a href="logout" id="#6"  (mouseover)="changetext6()" routerLink="/home" (mouseout)="dt6()" class="hoverable12 nav-link"  style="color:whitesmoke;"><span class="fa fa-power-off "></span></a>
+        </li>
+      </ul>
+
+     </div>
+  </nav>
+
+  <div>
+    <section class="section-bg">
+      <div class="container " >
+        <strong style="padding-left:300px ; color: rgb(250, 184, 60);">BOOK A CAR NOW </strong>
+        <p style="padding-left:300px ;" >Pick the Best Car Move Beyond your need. We simplified car rentals, so you can focus on what's important to you</p>
+        <nav aria-label="breadcrumb"  style="margin-left:300px ;width: 800px; background-color: orangered; ">
+          <ol class="breadcrumb">
+            <h4 class="breadcrumb-item active" style="color: orangered; padding-left: 210px;  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" aria-current="page">FAST AND AFFORDABE CARS</h4>
+          </ol>
+        </nav>
+        <h6 style="padding-left:430px ; padding-bottom: 10px;" >Make a booking, unlock your car, and end your reservation all just here</h6>
+
+
+         <div class="row" >
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="header">
+              <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/images/o.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                      <p>It's a never ending battle of making your cars better and also trying to be better yourself..</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <img src="/images/automobile-blurred-background-car-1426703.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>The cars we drive say a lot about us.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/p.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                     <p>Self-driving cars are the natural extension of active safety and obviously something we should do.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/worst-cars-for-teenage-drivers.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                     <p>Rental Cars: A Necessity in the Times of Novel Coronavirus</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/i.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>One size never fits all! Choose a balance of time and kilometers that works best for you.</p>
+                    </div>
+                  </div>
+                </div>
+                <a style="visibility: hidden;" class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a style="visibility: hidden;" class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+              <div  style="padding-top: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <h5 style="padding-left: 25px; color: green;">Find vehical according to your need</h5>
+                <div class="list-group">
+                  <button type="button" class="list-group-item">BIKE</button>
+                  <button type="button" class="list-group-item">4 SEATER CAR</button>
+                  <button type="button" class="list-group-item">6 SEATER CAR</button>
+                  <!-- <button type="button" class="list-group-item">8 SEATER CAR</button> -->
+                </div>
+              </div>
+
+              </div>
+            </div>
+
+<% deepak.forEach(function(user){ %>
+             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 " >
+                 <div class="card single-product">
+                     <div class="product-thumb">
+
+                         <img style="height:180px;width:230px" src="<%=user.image %>" alt="">
+                     </div>
+                     <div class="product-btns">
+                         <a href="#" class="btn-small " >75/-</a>
+                         <a > <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                           <input type="hidden" name="cmd" value="_s-xclick">
+                           <input type="hidden" name="hosted_button_id" value="FRQTG5RCN77KC">
+                           <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                           <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                           </form> </a>
+
+                     </div>
+                     <div class="card-body">
+                      <div class="product-title">
+                        <h5>Car</h5>
+                    </div>
+                       <p style="font-size: 13px;">Get this car only just in <strong>75</strong> rupee per day. Our mordern fleet of cars allow you the freedom to explore with the confideence of a guaranteed low price.</p>
+                     </div>
+                 </div>
+             </div>
+<% })%>
+              <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 " >
+                 <div class="card single-product">
+                     <div class="product-thumb">
+                         <img src="/images/123.jpg" alt="">
+                     </div>
+                     <div class="product-btns">
+                         <a href="#" class="btn-small mr-2">75/-</a>
+                         <a href="#" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                         <a id="#heart" (click)="changecolor()"  class="btn-round" ><i class="fa fa-heart-o" ></i></a>
+                     </div>
+                     <div class="card-body">
+                      <div class="product-title">
+                        <h5>Car</h5>
+                    </div>
+                       <p style="font-size: 13px;">Get this car only just in <strong>75</strong> rupee per day. Our mordern fleet of cars allow you the freedom to explore with the confideence of a guaranteed low price.</p>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 " >
+              <div class="card single-product">
+                  <div class="product-thumb">
+                      <img src="/images/123.jpg" alt="">
+                  </div>
+                  <div class="product-btns">
+                      <a href="#" class="btn-small mr-2">75/-</a>
+                      <a href="#" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                      <a id="#heart" (click)="changecolor()"  class="btn-round" ><i class="fa fa-heart-o" ></i></a>
+                  </div>
+                  <div class="card-body">
+                   <div class="product-title">
+                     <h5>Car</h5>
+                 </div>
+                    <p style="font-size: 13px;">Get this car only just in <strong>75</strong> rupee per day. Our mordern fleet of cars allow you the freedom to explore with the confideence of a guaranteed low price.</p>
+                  </div>
+              </div>
+          </div>
+
+         </div>
+         <div class="row" >
+             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6  offset-3" >
+                 <div class="card single-product">
+                     <div class="product-thumb">
+                         <img src="/images/123.jpg" alt="">
+                     </div>
+                     <div class="product-btns">
+                         <a href="#" class="btn-small mr-2">75/-</a>
+                         <a href="#" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                         <a id="#heart" (click)="changecolor()"  class="btn-round" ><i class="fa fa-heart-o" ></i></a>
+                     </div>
+                     <div class="card-body">
+                      <div class="product-title">
+                        <h5>Car</h5>
+                    </div>
+                       <p style="font-size: 13px;">Get this car only just in <strong>75</strong> rupee per day. Our mordern fleet of cars allow you the freedom to explore with the confideence of a guaranteed low price.</p>
+                     </div>
+                 </div>
+             </div>
+
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 " >
+                 <div class="card single-product">
+                     <div class="product-thumb">
+                         <img src="/images/123.jpg" alt="">
+                     </div>
+                     <div class="product-btns">
+                         <a href="#" class="btn-small mr-2">75/-</a>
+                         <a href="#" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                         <a id="#heart" (click)="changecolor()"  class="btn-round" ><i class="fa fa-heart-o" ></i></a>
+                     </div>
+                     <div class="card-body">
+                      <div class="product-title">
+                        <h5>Car</h5>
+                    </div>
+                       <p style="font-size: 13px;">Get this car only just in <strong>75</strong> rupee per day. Our mordern fleet of cars allow you the freedom to explore with the confideence of a guaranteed low price.</p>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 " >
+              <div class="card single-product">
+                  <div class="product-thumb">
+                      <img src="/images/123.jpg" alt="">
+                  </div>
+                  <div class="product-btns">
+                      <a href="#" class="btn-small mr-2">75/-</a>
+                      <a href="#" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                      <a id="#heart" (click)="changecolor()"  class="btn-round" ><i class="fa fa-heart-o" ></i></a>
+                  </div>
+                  <div class="card-body">
+                   <div class="product-title">
+                     <h5>Car</h5>
+                 </div>
+                    <p style="font-size: 13px;">Get this car only just in <strong>75</strong> rupee per day. Our mordern fleet of cars allow you the freedom to explore with the confideence of a guaranteed low price.</p>
+                  </div>
+              </div>
+          </div>
+
+         </div>
+         <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 offset-3" >
+            <div class="card single-product">
+                <div class="product-thumb">
+                    <img src="/images/123.jpg" alt="">
+                </div>
+                <div class="product-btns">
+                    <a href="#" class="btn-small mr-2">75/-</a>
+                    <a href="#" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                    <a  class="btn-round" ><i class="fa fa-heart-o" ></i></a>
+                </div>
+                <div class="card-body">
+                 <div class="product-title">
+                   <h5>Car</h5>
+               </div>
+                  <p>Get this car only just in <strong>75</strong> rupee per day. Feature of this car is 4 person can sit simultaneously and you only have to pay per day charge.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6" >
+          <div class="card single-product">
+              <div class="product-thumb">
+                  <img src="/images/123.jpg" alt="">
+              </div>
+              <div class="product-btns">
+                  <a href="#" class="btn-small mr-2">75/-</a>
+                  <a href="#" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                  <a  class="btn-round" ><i class="fa fa-heart-o" ></i></a>
+              </div>
+              <div class="card-body">
+               <div class="product-title">
+                 <h5>Car</h5>
+             </div>
+                <p>Get this car only just in <strong>75</strong> rupee per day. Feature of this car is 4 person can sit simultaneously and you only have to pay per day charge.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6" >
+        <div class="card single-product">
+            <div class="product-thumb">
+                <img src="/images/123.jpg" alt="">
+            </div>
+            <div class="product-btns">
+                <a href="#" class="btn-small mr-2">75/-</a>
+                <a href="#" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                <a  class="btn-round" ><i class="fa fa-heart-o" ></i></a>
+            </div>
+            <div class="card-body">
+             <div class="product-title">
+               <h5>Car</h5>
+           </div>
+              <p>Get this car only just in <strong>75</strong> rupee per day. Feature of this car is 4 person can sit simultaneously and you only have to pay per day charge.</p>
+            </div>
+        </div>
+    </div> -->
+         <!-- </div> -->
+
+
+         <div class="row button-center">
+             <div class="col-xl-6 centered">
+                 <a href="#" class="bttn-def"><span>Load more</span></a>
+             </div>
+
+         </div>
+
+      </div>
+
+    </section>
+</div>
+<div>
+
+</div>
+<div class="container">
+  <div class="row">
+
+  </div>
+</div>
+<footer class="footer-distributed" >
+
+  <div class="footer-left">
+
+    <h3>Drive Your <span>Car</span></h3>
+
+    <p class="footer-links">
+      <a href="#" class="link-1">Home</a>
+
+      <a href="#">Register</a>
+
+      <a href="#">Pricing</a>
+
+      <a href="#">About</a>
+
+      <a href="#">Contact</a>
+    </p>
+
+    <p class="footer-company-name">Drive Your Car © 2020</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>Madhvan nagar Bheriya jadjad jablpur road sagar</span> Madhay Pradesh, India</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>9926449654</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:support@company.com">driveyourcar@gmail.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p class="footer-company-about">
+      <span>About Drive your car services</span>
+      Drive your car provides car at rent in very low cost .our service is feasible for eveyone. our staring price is just only 75/- :)
+    </p>
+
+    <div class="footer-icons">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+      <a href="#"><i class="fa fa-envelope-o"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<style media="screen">
+
+.image{
+  background-image: url('/images/p.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+
+
+}
+
+  .section-bg
+{
+    background: rgba(235, 234, 232, 0.466);
+    padding: 60px 0;
+}
+
+.container{
+  position: relative;
+}
+.single-product
+{
+    box-shadow: inset -2px -2px 8px rgb(102, 102, 102),
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    padding-right: 12px;
+    padding-top: 18px;
+    padding-left: 12px;
+}
+.single-product .product-thumb
+{
+    margin-bottom: 8px;
+}
+img
+{ display: inline-block;
+    width: 100%;
+
+
+
+}
+
+.single-product:hover
+{
+    box-shadow:-2px -2px 8px rgb(238, 178, 178),
+          -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+          2px 2px 8px rgba(0,0,0,0.15);
+}
+
+.product-btns
+{
+    display: flex;
+    justify-content: center;
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #292929;
+}
+
+.card .card-body{
+  visibility: hidden;
+  transform:translateY(-150px) ;
+  height:0px;
+  padding-bottom: 0px;
+}
+.card:hover .card-body{
+  visibility:visible;
+  transform: translateY(-10px);
+  transition: .6s;
+  height:auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(51, 50, 50);
+}
+ .card-body .single-product .product-title
+{
+    margin-bottom: 5px;
+    text-align: center;
+    align-items: center;
+}
+ .card-body .single-product .product-title h5
+{
+    font-family: "Didact Gothic",sans-serif;
+}
+ .card-body .single-product .product-title h5 a
+{
+    color: #292929;
+    text-decoration: none;
+}
+ .card-body .single-product .product-title h5 a:hover
+{
+    color:#7289ab
+}
+
+
+.list-group button:hover{
+  box-shadow: -2px -2px 8px rgb(222, 241, 187),
+     -2px -2px 12px rgb(241, 187, 187),
+    inset 2px 2px 4px rgba(240, 191, 191, 0.1),
+     2px 2px 8px rgba(252, 189, 189, 0.15);
+     color: #3002fc;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: large;
+}
+/****************buttons************/
+
+.btn-small
+{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 32px;
+    border-radius: 50px;
+    box-shadow:inset -2px -2px 8px white,
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+    transition: 0.4s;
+}
+
+.btn-round
+{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+     2px 2px 8px rgba(0,0,0,0.15);
+
+}
+.btn-small:hover
+{
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+     2px 2px 8px rgba(0,0,0,0.15);
+     color: #7289ab;
+     text-decoration: none;
+}
+.btn-round:hover
+{
+    box-shadow:inset -2px -2px 8px rgb(255, 192, 192),
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+    color: #7289ab;
+}
+
+.button-center
+{
+    justify-content: center;
+    text-align: center;
+}
+
+.bttn-def
+{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 42px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+     2px 2px 8px rgba(0,0,0,0.15);
+     transition: 0.4s;
+     font-family:"Didact Gothic", sans-serif ;
+
+}
+
+.bttn-def:hover
+{
+    color: #7289ab;
+    box-shadow:inset -2px -2px 8px white,
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+     color: #7289ab;
+}
+.bttn-def:hover span
+{
+    display: inline-block;
+    transform: scale(0.98);
+}
+
+.header {
+  position: absolute;
+
+  top: -170px;
+  left: -183px;
+ width: 25em;
+ height: 60em;
+ /* background-image: url('/assets/images/blackcar.jpg');
+ opacity: 0.3;
+ background-repeat: no-repeat;
+ background-size: cover;
+background-position: center; */
+
+
+
+
+}
+
+/*********************************************/
+ .hoverable12 {
+  display: inline-block;
+  backface-visibility: hidden;
+  vertical-align: middle;
+  position: relative;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hoverable12:before {
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+.hoverable12:hover, .hoverable12:active, .hoverable12:focus {
+  transform: translateY(-5px);
+}
+.hoverable12:hover:before, .hoverable12:active:before, .hoverable12:focus:before {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+nav {
+  background: rgb(24, 24, 24);
+  color: rgb(253, 231, 234);
+  text-transform: uppercase;
+}
+
+nav li a {
+  transition: 0.5s color ease-in-out;
+}
+/**************************/
+.dot {
+  height: 25px;
+  width: 85px;
+  background-color: rgba(15, 15, 15, 0.884);
+  border-radius: 30px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 3px;
+
+   }
+/****************************************/
+
+
+
+.footer-distributed{
+	background:rgb(24, 24, 24);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  rgb(185, 182, 182);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #878a8daf;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #878a8daf;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.carousel-item{
+  height: 300px;
+  border: 1px solid black;
+}
+
+.carousel-item img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+}
+
+
+
+</style>
+
+<script type="text/javascript">
+  changetext(){
+     document.getElementById("#1").innerHTML="Home";
+
+   }
+   dt(){
+    document.getElementById('#1').innerHTML="<span class='fa fa-home'></span>"
+   }
+   changetext2(){
+    document.getElementById("#2").innerHTML="About";
+
+  }
+  dt2(){
+   document.getElementById('#2').innerHTML="<span class='fa fa-info'></span>"
+  }
+  changetext3(){
+    document.getElementById("#3").innerHTML="Contact";
+
+  }
+  dt3(){
+   document.getElementById('#3').innerHTML="<span class='fa fa-phone'></span>"
+  }
+  changetext4(){
+    document.getElementById("#4").innerHTML="Myaccount";
+
+  }
+  dt4(){
+   document.getElementById('#4').innerHTML="<span class='fa fa-user-circle-o'></span>"
+  }
+  changetext5(){
+    document.getElementById("#5").innerHTML="Register";
+
+  }
+  dt5(){
+    document.getElementById('#5').innerHTML="<span class='fa fa-user-plus'></span>"
+   }
+   changecolor(){
+     document.getElementById('#heart').innerHTML="<i class='fa fa-heart'></i>"
+   }
+</script>
+</body>
+</html>
+
+
+
+<!-- <nav class="navbar  navbar-expand-sm  fixed sticky-top"  >
+    <button class="navbar-toggler" style="background-color: antiquewhite;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span  style="color: black;" class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <h4  style=" margin-top: 8px; margin-bottom: 8px; margin-left:35px ; font-weight:bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" routerLink="/home">DRIVE YOUE CAR</h4>
+       <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item" >
+            <a  id="#1"  (mouseover)="changetext()" (mouseout)="dt()" class="hoverable12 nav-link" style="color:whitesmoke;"><span class="fa fa-home "></span></a>
+          </li>
+        <li class="nav-item" >
+          <a   id="#2"  (mouseover)="changetext2()" (mouseout)="dt2()" class="hoverable12 nav-link " style="color:whitesmoke;"><span class="fa fa-info "></span></a>
+        </li>
+        <li class="nav-item">
+          <a  id="#3"  (mouseover)="changetext3()" (mouseout)="dt3()"   class="hoverable12 nav-link" style="color:whitesmoke;"><span class="fa fa-phone "></span></a>
+        </li>
+        <li class="nav-item" >
+          <a  id="#5"  (mouseover)="changetext5()" (mouseout)="dt5()"   class="hoverable12 nav-link" style="color:whitesmoke;"><span class="fa fa-user-plus "></span></a>
+        </li>
+        <li class="nav-item" style="padding-left:95px ; padding-right: 30px;">
+            <a  id="#4"  (mouseover)="changetext4()" (mouseout)="dt4()" class="hoverable12 nav-link"  style="color:whitesmoke;"><span class="fa fa-user-circle-o "></span></a>
+          </li>
+      </ul>
+
+     </div>
+  </nav>
+
+
+<div>
+    <section class="section-bg">
+      <div class="container">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="header">
+            <div style="color:white;">
+              <p>This car only just in <strong>75</strong>
+                rupee per day. Feature of this car is 4 or 6 person can easily be seat on this car only just in
+                <strong>75</strong> rupee per day. Feature of this car is 4 person can seat on this
+                 car only just in <strong>75</strong> rupee per day. Feature of this car is 4 per
+              </p>
+            </div>
+
+            </div>
+          </div>
+
+
+
+         <div class="row" >
+
+
+             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 offset-3" >
+                 <div class="card single-product">
+                     <div class="product-thumb">
+                         <img src="/images/12.jpg" alt="">
+                     </div>
+                     <div class="product-btns">
+                         <a href="#" class="btn-small mr-2">75/-</a>
+                         <a href="#" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                         <a id="#heart" (click)="changecolor()" (click)="t1()" class="btn-round" ><i class="fa fa-heart-o" ></i></a>
+                     </div>
+                     <div class="card-body">
+                      <div class="product-title">
+                        <h5>Car</h5>
+                    </div>
+                       <p>Get this car only just in <strong>75</strong> rupee per day. Feature of this car is 4 person can sit simultaneously and you only have to pay per day charge.</p>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6" >
+              <div class="card single-product">
+                  <div class="product-thumb">
+                      <img src="/images/12.jpg" alt="">
+                  </div>
+                  <div class="product-btns">
+                      <a href="#" class="btn-small mr-2">75/-</a>
+                      <a href="#" class="btn-round mr-2">
+                        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="FRQTG5RCN77KC">
+                        <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                      <a id="#heart" (click)="changecolor()" (click)="t1()" class="btn-round" ></a>
+                  </div>
+                  <div class="card-body">
+                   <div class="product-title">
+                     <h5>Car</h5>
+                 </div>
+                    <p>Get this car only just in <strong>75</strong> rupee per day. Feature of this car is 4 person can sit simultaneously and you only have to pay per day charge.</p>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6" >
+            <div class="card single-product">
+                <div class="product-thumb">
+                    <img src="/images/12.jpg" alt="">
+                </div>
+                <div class="product-btns">
+                    <a href="#" class="btn-small mr-2">75/-</a>
+                    <a href="#" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                    <a id="#heart" (click)="changecolor()" (click)="t1()" class="btn-round" ><i class="fa fa-heart-o" ></i></a>
+                </div>
+                <div class="card-body">
+                 <div class="product-title">
+                   <h5>Car</h5>
+               </div>
+                  <p>Get this car only just in <strong>75</strong> rupee per day. Feature of this car is 4 person can sit simultaneously and you only have to pay per day charge.</p>
+                </div>
+            </div>
+        </div>
+
+         </div>
+         <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 offset-3" >
+            <div class="card single-product">
+                <div class="product-thumb">
+                    <img src="/images/12.jpg" alt="">
+                </div>
+                <div class="product-btns">
+                    <a href="#" class="btn-small mr-2">75/-</a>
+                    <a href="#" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                    <a id="#heart" (click)="changecolor()" (click)="t1()" class="btn-round" ><i class="fa fa-heart-o" ></i></a>
+                </div>
+                <div class="card-body">
+                 <div class="product-title">
+                   <h5>Car</h5>
+               </div>
+                  <p>Get this car only just in <strong>75</strong> rupee per day. Feature of this car is 4 person can sit simultaneously and you only have to pay per day charge.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6" >
+          <div class="card single-product">
+              <div class="product-thumb">
+                  <img src="/images/12.jpg" alt="">
+              </div>
+              <div class="product-btns">
+                  <a href="#" class="btn-small mr-2">75/-</a>
+                  <a href="#" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                  <a id="#heart" (click)="changecolor()" (click)="t1()" class="btn-round" ><i class="fa fa-heart-o" ></i></a>
+              </div>
+              <div class="card-body">
+               <div class="product-title">
+                 <h5>Car</h5>
+             </div>
+                <p>Get this car only just in <strong>75</strong> rupee per day. Feature of this car is 4 person can sit simultaneously and you only have to pay per day charge.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6" >
+        <div class="card single-product">
+            <div class="product-thumb">
+                <img src="/images/12.jpg" alt="">
+            </div>
+            <div class="product-btns">
+                <a href="#" class="btn-small mr-2">75/-</a>
+                <a href="#" class="btn-round mr-2"><i class="fa fa-shopping-cart"></i></a>
+                <a id="#heart" (click)="changecolor()" (click)="t1()" class="btn-round" ><i class="fa fa-heart-o" ></i></a>
+            </div>
+            <div class="card-body">
+             <div class="product-title">
+               <h5>Car</h5>
+           </div>
+              <p>Get this car only just in <strong>75</strong> rupee per day. Feature of this car is 4 person can sit simultaneously and you only have to pay per day charge.</p>
+            </div>
+        </div>
+    </div>
+         </div>
+
+
+         <div class="row button-center">
+             <div class="col-xl-6 centered">
+                 <a href="#" class="bttn-def"><span>Load more</span></a>
+             </div>
+
+         </div>
+
+      </div>
+
+    </section>
+
+
+
+</div>
+<style media="screen">
+.section-bg
+{
+    background: #e6e6e62c;
+    padding: 60px 0;
+}
+
+.single-product
+{
+    box-shadow: inset -2px -2px 8px rgb(102, 102, 102),
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    padding-right: 12px;
+    padding-top: 18px;
+    padding-left: 12px;
+}
+.single-product .product-thumb
+{
+    margin-bottom: 8px;
+}
+img
+{ display: inline-block;
+    width: 100%;
+    height:40%;
+
+
+}
+
+.single-product:hover
+{
+    box-shadow:-2px -2px 8px rgb(238, 178, 178),
+          -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+          2px 2px 8px rgba(0,0,0,0.15);
+}
+
+.product-btns
+{
+    display: flex;
+    justify-content: center;
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #292929;
+}
+
+.card .card-body{
+  visibility: hidden;
+  transform:translateY(-150px) ;
+  height:0px;
+  padding-bottom: 0px;
+}
+.card:hover .card-body{
+  visibility:visible;
+  transform: translateY(-10px);
+  transition: .6s;
+  height:auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(51, 50, 50);
+}
+ .card-body .single-product .product-title
+{
+    margin-bottom: 5px;
+    text-align: center;
+    align-items: center;
+}
+ .card-body .single-product .product-title h5
+{
+    font-family: "Didact Gothic",sans-serif;
+}
+ .card-body .single-product .product-title h5 a
+{
+    color: #292929;
+    text-decoration: none;
+}
+ .card-body .single-product .product-title h5 a:hover
+{
+    color:#7289ab
+}
+/*****buttons*****/
+
+.btn-small
+{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 32px;
+    border-radius: 50px;
+    box-shadow:inset -2px -2px 8px white,
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+    transition: 0.4s;
+}
+
+.btn-round
+{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+     2px 2px 8px rgba(0,0,0,0.15);
+
+}
+.btn-small:hover
+{
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+     2px 2px 8px rgba(0,0,0,0.15);
+     color: #7289ab;
+     text-decoration: none;
+}
+.btn-round:hover
+{
+    box-shadow:inset -2px -2px 8px rgb(255, 192, 192),
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+    color: #7289ab;
+}
+
+.button-center
+{
+    justify-content: center;
+    text-align: center;
+}
+
+.bttn-def
+{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 42px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+     2px 2px 8px rgba(0,0,0,0.15);
+     transition: 0.4s;
+     font-family:"Didact Gothic", sans-serif ;
+
+}
+
+.bttn-def:hover
+{
+    color: #7289ab;
+    box-shadow:inset -2px -2px 8px white,
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+     color: #7289ab;
+}
+.bttn-def:hover span
+{
+    display: inline-block;
+    transform: scale(0.98);
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 59px;
+  bottom: 0;
+ width: 14.2em;
+ background: #2c2c25;
+}
+
+/***************/
+ .hoverable12 {
+  display: inline-block;
+  backface-visibility: hidden;
+  vertical-align: middle;
+  position: relative;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hoverable12:before {
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+.hoverable12:hover, .hoverable12:active, .hoverable12:focus {
+  transform: translateY(-5px);
+}
+.hoverable12:hover:before, .hoverable12:active:before, .hoverable12:focus:before {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+nav {
+  background: rgba(46, 46, 46, 0.705);
+  color: rgb(253, 231, 234);
+  text-transform: uppercase;
+}
+
+nav li a {
+  transition: 0.5s color ease-in-out;
+
+-->

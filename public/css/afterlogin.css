@@ -1,0 +1,671 @@
+
+    .image{
+        background-image: url('/images/chevrolet_camaro_muscle_car-3840x2160.jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+         height: 90vh;
+          width: 100%;
+          position: relative;
+
+      }
+      .sam{
+        position: absolute;
+        height: 100%;
+        width: 101%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.55);
+        color: white;
+
+        align-items: center;
+        justify-content: center;
+
+      }
+
+      .hoverable12 {
+        display: inline-block;
+        backface-visibility: hidden;
+        vertical-align: middle;
+        position: relative;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        transform: translateZ(0);
+        transition-duration: 0.3s;
+        transition-property: transform;
+
+      }
+      .hoverable12:before {
+        position: absolute;
+        pointer-events: none;
+        z-index: -1;
+        content: '';
+        top: 100%;
+        left: 5%;
+        height: 10px;
+        width: 90%;
+        opacity: 0;
+        background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+        background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+        transition-duration: 0.3s;
+        transition-property: transform, opacity;
+      }
+      .hoverable12:hover, .hoverable12:active, .hoverable12:focus {
+        transform: translateY(-5px);
+      }
+      .hoverable12:hover:before, .hoverable12:active:before, .hoverable12:focus:before {
+        opacity: 1;
+        transform: translateY(-5px);
+      }
+
+      nav {
+
+        text-transform: uppercase;
+      }
+
+      nav li a {
+        transition: 0.5s color ease-in-out;
+      }
+
+      .sambutton{
+        position: absolute;
+        width: 140px;
+        height: 45px;
+        top: 380px;
+        right:720px;
+        align-items: center;
+        font-size: 20px;
+        color: rgb(253, 235, 238) !important;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: rgba(237, 247, 92, 0.596);
+        border-radius: 20px;
+        border: 1px solid #c4fa03;
+
+
+
+      }
+      .text-block {
+        position: absolute;
+        top: 570px;
+        left: 125px;
+        background-color: rgb(15, 128, 136);
+        color:black;
+        width: 1200px;
+        height: 90px;
+
+      }
+      .text-block1{
+        position: absolute;
+        top: -250px;
+        left: -70px;
+        width: 1250px;
+        height: 370px;
+        background-image: url('/images/2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+
+
+      }
+      .sam2{
+        position: absolute;
+        height: 370px;
+        width: 1250px;
+        top: -10px;
+        left: 0;
+        background: rgba(139, 124, 124, 0.26);
+        color:rgb(253, 253, 253);
+        text-shadow:3px 3px rgb(17, 17, 17);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+      }
+
+
+
+      .bg{
+        transition: 0.5s ease;
+        color:whitesmoke;
+        background-color: rgba(15, 15, 15, 0.856);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .bg.scrolled{
+        background-color: rgba(32, 32, 32, 0.986);
+         color: rgb(253, 231, 234) !important;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .image1{
+        background: url('/images/blackcar.jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: top;
+     }
+
+
+    .view {
+        height: 100%;
+      }
+    .forbold{
+        text-shadow: black;
+        font-weight: 500;
+    }
+
+    .serif {
+        font-family: Times, serif;
+    }
+    .text{
+        color:rgb(15, 1, 1);
+
+      }
+      .font{
+        font-weight: bolder !important;
+
+
+      }
+
+      .car{
+          font-size: 400%;
+      }
+      .backcolor{
+          background-color:white
+      }
+      .margin{
+          margin-top: 0px;
+      }
+      .heading1{
+          margin-top: 15px;;
+      }
+
+.navbar-default{
+    background-color:#4dcec1;
+    text-shadow: lightseagreen;
+}
+
+
+.dot {
+    height: 35px;
+    width: 85px;
+    background-color: rgba(40, 171, 247, 0.884);
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 70px;
+     }
+    .container1 {
+        position: relative;
+        font-family:serif
+      }
+
+      .heart{
+        color:red;
+    }
+
+    .carousel {
+       /* background:rgb(238, 194, 177);*/
+       background-color:rgb(46, 44, 44);
+       opacity: .9;
+        z-index: 1;
+        margin-top: 150px;
+        padding-top: 40px;
+        margin-bottom: 100px;
+    }
+
+    .carousel-item {
+
+      height: 300px;
+    }
+
+    .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 400px;
+    }
+    .forcar{
+        padding-left: 470px;
+       /* color:rgb(199, 115, 82);*/
+       color: white !important
+       ;
+        margin-top: 20px;
+        font-size: 900%;
+    }
+    .forarrow{
+        padding-left: 470px;
+        color:white;
+        margin-top: 6px;
+        margin-bottom: 2px;
+        font-size: 900%;
+    }
+    .c1{
+        padding-bottom: 50px;
+        text-align: center;
+        color: rgb(90, 90, 90);
+
+    }
+    .s1{
+      margin-bottom: 25px;
+      margin-top: 220px;
+    }
+    .serif {
+        font-family: Times, serif;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 250px;
+        height: 200px;
+        border: 1px solid #c4fa03;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
+
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+      }
+
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      /* Style the back side */
+      .flip-card-back {
+        background-color: rgba(5, 126, 96, 0.493);
+        color: white;
+        text-shadow:3px 3px rgba(17, 17, 17, 0.541);
+        transform: rotateY(180deg);
+      }
+
+      /*form card***/
+      .cardovercard{
+
+         position: relative;
+      /*  width: 600px;
+        height: 100px;
+        top:200px;
+        right: 150px;*/
+      }
+      .card {
+    position: relative;
+    max-width: 60.5em;
+    margin: 3rem auto;
+    padding: 2em;
+    background: rgba(172, 170, 170, 0.753);
+}
+.card__title {
+    margin: 0 auto 1em;
+    color: #333;
+    text-align: center;
+    text-transform: capitalize;
+}
+.card__img {
+    display: block;
+    width: 20em;
+    max-width: 100%;
+    margin: 1em auto;
+    border-radius: 2px;
+}
+
+.card__text {
+    text-align: center;
+    margin: 2em 5%;
+    color: #070707;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+
+    .card__btn {
+        display: table;
+        padding: 0.7em 4em;
+        background: #dfb86a;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 1em auto 0;
+        width: 50em;
+    }
+.card--14 {
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.card--14 .card__text, .card--14 .card__title, .card--14 .card__img, .card--14 .card__btn {
+    transition: all 0.3s ease-in-out;
+}
+.card--14:hover {
+    background-color: transparent;
+    background-image: url(/images/i.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card--14:hover .card__title {
+    color: #fff;
+    transform: translate3d(0, 120px, 0) scale(1.5);
+}
+.card--14:hover .card__text {
+    color: #fff;
+    transform: translate3d(0, -120px, 0) scale(1.2);
+}
+.card--14:hover .card__btn {
+    transform: translate3d(0, -120px, 0);
+    background: white;
+    color: #333;
+}
+.card--14:hover .card__img {
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+
+/* ----------------------------vehicle details css------------------------- */
+#login-box {
+  position: relative;
+
+  margin: 5% auto;
+  width: 900px;
+  height: 500px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px 6px rgba(37, 37, 37, 0.733);
+  background: url('/images/234.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:top;
+}
+.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 450px;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 2px 2px 0;
+  }
+
+.left {
+  position: absolute;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 520px;
+  height: 500px;
+  background-color: rgba(49, 48, 48, 0.308);
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+  color: rgb(253, 123, 123);
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 400px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #1dc5a3;
+  color: #101111;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+
+
+
+
+.right .loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #FFF;
+  text-align: center;
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 150px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 36px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: rgb(129, 5, 5);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.fortext{
+  color: rgb(7, 7, 7);
+  font-weight:500;
+}
+
+/*************************************footer********************/
+.footer-distributed{
+	background:rgb(24, 24, 24);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  rgb(185, 182, 182);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #878a8daf;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #878a8daf;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
